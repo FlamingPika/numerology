@@ -1,0 +1,226 @@
+/* Element Styling */
+
+body {
+    background-color: #5b3151;
+    min-height: 100vh;
+    position: relative;
+}
+
+p {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    color: #f8efe2;
+    margin-top: 2px;
+    margin: 2px 18px auto 18px;
+}
+
+input {
+    text-align: center;
+    padding: 10px;
+    margin: 0.5rem;
+    border-width: 1px;
+    border-color: #f8efe2;
+    border-radius: 20px;
+    outline: none;
+    background-color: transparent;
+    height: 6rem;
+    width: 6rem;
+    font-size: 5rem;    
+    color: #f8efe2;
+}
+
+input.invalid {
+    border-color: red;
+}
+
+/* Class Styling */
+
+.ddesc {
+    right: 4.5rem;
+}
+
+.mdesc {
+    right: 2.5rem;
+}
+
+.ydesc {
+    left: 1.8rem;
+}
+
+.ddesc.gone {
+    animation: fadeout 0.5s forwards;
+}
+
+.mdesc.gone {
+    animation: fadeout 0.5s forwards;
+}
+
+.ydesc.gone {
+    animation: fadeout 0.5s forwards;
+}
+
+.result {
+    display: none;
+    height: 8rem;
+    width: 8rem;
+    font-size: 7rem;
+    text-align: center;
+    color: #f8efe2;
+}
+
+.result.morethan10 {
+    font-size: 5rem;
+}
+
+.result.show {
+    display: block;
+    animation: fadein 0.5s forwards;
+}
+
+.result.float {
+    animation: float 1s infinite ease-in-out alternate;
+}
+
+.image {
+    display: none;
+    position:relative;
+    opacity: 50%;
+    height: 4rem;
+    width: 4rem;
+    transition: all 0.2s ease;
+}
+
+.image.show {
+    display: inline;
+    animation: fadein 500ms forwards;
+}
+
+.image.combine1 {
+    transform: translateX(10rem);
+    animation: fadeout 0.2s forwards;
+}
+
+.image.combine2 {
+    transform: translateX(-3rem);
+    animation: fadeout 0.2s forwards;
+}
+
+.image.gone {
+    display: none;
+}
+
+.canvas {
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.input-container {
+    display: inline-block;
+}
+
+.num-input-container {
+    transition: all 0.2s ease;
+}
+
+.num-input-container.gone {
+    display: none;
+}
+
+.num-input-container.combine1 {
+    transform: translateX(16rem);
+    animation: fadeout 0.2s forwards;
+}
+.num-input-container.combine2 {
+    transform: translateX(3rem);
+    animation: fadeout 0.2s forwards;
+}
+
+.num-input-container.combine3 {
+    transform: translateX(-12.6rem);
+    animation: fadeout 0.2s forwards;
+}
+
+.num-input-container.process {
+    animation: shake .13s 3;
+}
+
+.four {
+    width: 12rem;
+}
+
+.button-container {
+    margin: 25px auto 10px auto;
+    text-align: center;
+    display: block;
+    flex:1;
+}
+
+.button-container button {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+
+    appearance: none;
+    background: none;
+    outline: none;
+
+    color: #f8efe2;
+    border: 1px solid #f8efe2;
+
+}
+
+.button-container button:hover {
+    transition: 0.2s;
+    color: #f8efe2;
+    background-color: #f8efe2;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+/* Animation */
+
+@keyframes float {
+    100% {
+        transform: translateY(-10px);
+    } 
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
