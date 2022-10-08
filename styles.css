@@ -178,12 +178,13 @@ input.invalid {
 
     color: #f8efe2;
     border: 1px solid #f8efe2;
+    cursor: pointer;
 
 }
 
 .button-container button:hover {
     transition: 0.2s;
-    color: #f8efe2;
+    color: #5b3151;
     background-color: #f8efe2;
 }
 
