@@ -9,10 +9,27 @@ body {
 p {
     position: relative;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #f8efe2;
     margin-top: 2px;
     margin: 2px 18px auto 18px;
+}
+
+.input-font {
+    font-family: 'Quicksand', Poppins, sans-serif;
+    font-weight: 500;
+}
+
+.title-font {
+    font-family: 'Inknut Antiqua', Libre Baskerville, sans-serif;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.button-font {
+    font-family: 'Inknut Antiqua', Libre Baskerville, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 input {
@@ -37,7 +54,7 @@ input.invalid {
 /* Class Styling */
 
 .ddesc {
-    right: 4.5rem;
+    right: 4rem;
 }
 
 .mdesc {
@@ -45,7 +62,7 @@ input.invalid {
 }
 
 .ydesc {
-    left: 1.8rem;
+    left: 1.2rem;
 }
 
 .ddesc.gone {
@@ -61,6 +78,8 @@ input.invalid {
 }
 
 .result {
+    font-family: 'Quicksand', Poppins, sans-serif;
+    font-weight: 500;
     display: none;
     height: 8rem;
     width: 8rem;
@@ -158,7 +177,7 @@ input.invalid {
 }
 
 .button-container {
-    margin: 25px auto 10px auto;
+    margin: 10px auto 10px auto;
     text-align: center;
     display: block;
     flex:1;
@@ -167,10 +186,8 @@ input.invalid {
 .button-container button {
     margin-left: 20px;
     margin-right: 20px;
-    padding: 10px 20px;
+    padding: 5px 12px;
     border-radius: 8px;
-    font-size: 18px;
-    font-weight: 600;
 
     appearance: none;
     background: none;
