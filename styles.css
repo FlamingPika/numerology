@@ -4,6 +4,7 @@ body {
     background-color: #5b3151;
     min-height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 p {
