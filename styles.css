@@ -67,15 +67,15 @@ input.invalid {
 }
 
 .ddesc.gone {
-    animation: fadeout 0.5s forwards;
+    animation: fadeout 0.3s forwards;
 }
 
 .mdesc.gone {
-    animation: fadeout 0.5s forwards;
+    animation: fadeout 0.3s forwards;
 }
 
 .ydesc.gone {
-    animation: fadeout 0.5s forwards;
+    animation: fadeout 0.3s forwards;
 }
 
 .result {
@@ -153,6 +153,7 @@ input.invalid {
 
 .num-input-container.gone {
     display: none;
+    animation: fadeout 0.3s forwards;
 }
 
 .num-input-container.combine1 {
