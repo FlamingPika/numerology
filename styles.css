@@ -55,14 +55,17 @@ input.invalid {
 /* Class Styling */
 
 .ddesc {
+    bottom: 10px;
     right: 4rem;
 }
 
 .mdesc {
+    bottom: 10px;
     right: 2.5rem;
 }
 
 .ydesc {
+    bottom: 10px;
     left: 1.2rem;
 }
 
@@ -82,9 +85,9 @@ input.invalid {
     font-family: 'Quicksand', Poppins, sans-serif;
     font-weight: 500;
     display: none;
-    height: 8rem;
-    width: 8rem;
-    font-size: 7rem;
+    height: 10rem;
+    width: 10rem;
+    font-size: 6rem;
     text-align: center;
     color: #f8efe2;
 }
@@ -145,6 +148,7 @@ input.invalid {
 
 .input-container {
     display: inline-block;
+    height: 10rem;
 }
 
 .num-input-container {
