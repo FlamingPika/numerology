@@ -25,7 +25,7 @@
                 <input id="year" class="num-input-container four input-font" type="text" inputmode="numeric" pattern="\d*" maxlength="4" invalid="false" onchange="validating(this)">
             </div>
         </div>
-        <div class="desc">
+        <div id="desc" class="desc">
             <p id="ddesc" class="ddesc title-font">Day</p>
             <p id="mdesc" class="mdesc title-font">Month</p>
             <p id="ydesc" class="ydesc title-font">Year</p>
@@ -34,10 +34,16 @@
             <button onclick="calculate()" class="button-font"> calculate </button>
             <button onclick="reset()" class="button-font"> reset </button>
         </div>
+        <div id="res2" class="info-text" visible="false" ongoing="false">
+            Moon in Scorpio creates the need to delve into your feelings as deep as possible. You
+      desire meaningful emotional exchanges now more than at any other time even if it is not easy and you are
+      forced to change many things. Shallow relationships do not satisfy you, because they are not purifying
+      enough.
+        </div>
     </div>
     
 </body>
 
-<script src="main.js"> </script>
+<script src="logic.js"> </script>
 
 </html>

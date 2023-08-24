@@ -81,6 +81,10 @@ input.invalid {
     animation: fadeout 0.3s forwards;
 }
 
+.desc.gone {
+    animation: fadeout 0.3s forwards;
+}
+
 .result {
     font-family: 'Quicksand', Poppins, sans-serif;
     font-weight: 500;
@@ -103,6 +107,16 @@ input.invalid {
 
 .result.float {
     animation: float 1s infinite ease-in-out alternate;
+}
+
+.info-text {
+    display: none;
+    letter-spacing: 1px;
+    font-family: 'Oranienbaum';
+    font-size: 18px;
+    color: #f8efe2;
+    padding: 20px;
+    text-align: center;
 }
 
 .image {
