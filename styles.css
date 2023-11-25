@@ -44,7 +44,7 @@ input {
     background-color: transparent;
     height: 6rem;
     width: 6rem;
-    font-size: 5rem;    
+    font-size: 5rem;
     color: #f8efe2;
 }
 
@@ -121,7 +121,7 @@ input.invalid {
 
 .image {
     display: none;
-    position:relative;
+    position: relative;
     opacity: 50%;
     height: 4rem;
     width: 4rem;
@@ -154,6 +154,7 @@ input.invalid {
     display: flex;
     flex-direction: column;
 }
+
 .container {
     align-items: center;
     justify-content: center;
@@ -178,6 +179,7 @@ input.invalid {
     transform: translateX(16rem);
     animation: fadeout 0.2s forwards;
 }
+
 .num-input-container.combine2 {
     transform: translateX(3rem);
     animation: fadeout 0.2s forwards;
@@ -200,7 +202,7 @@ input.invalid {
     margin: 10px auto 10px auto;
     text-align: center;
     display: block;
-    flex:1;
+    flex: 1;
 }
 
 .button-container button {
@@ -229,9 +231,11 @@ input.invalid {
     0% {
         transform: translateX(0);
     }
+
     40% {
         transform: translateX(10px);
     }
+
     100% {
         transform: translateX(-10px);
     }
@@ -242,13 +246,14 @@ input.invalid {
 @keyframes float {
     100% {
         transform: translateY(-10px);
-    } 
+    }
 }
 
 @keyframes fadein {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -258,7 +263,79 @@ input.invalid {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
+    }
+}
+
+/* AbdulAhmad Matin Changes */
+.numerology.container,
+.numerology.desc {
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.numerology .input-container {
+    width: 100%;
+    display: flex;
+}
+
+.numerology .ydesc,
+.numerology .mdesc,
+.numerology .ddesc {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.numerology #day,
+.numerology #month,
+.numerology .mdesc,
+.numerology .ddesc {
+    width: 22%;
+    margin: 0;
+    padding: 1%;
+    margin: 0 3% !important;
+    min-height: 5vw;
+}
+
+.numerology .result.float {
+    width: 100%;
+    text-align: center;
+}
+
+.numerology #year,
+.numerology .ydesc {
+    width: 38%;
+    margin: 0 3% !important;
+    padding: 1%;
+    min-height: 5vw;
+}
+
+@media (max-width: 768px) {
+
+    .numerology #day,
+    .numerology #month,
+    .numerology .mdesc,
+    .numerology .ddesc {
+
+        font-size: 7vw;
+    }
+
+    .numerology #year,
+    .numerology .ydesc {
+        font-size: 7vw;
+    }
+
+    .button-container button{
+        margin-bottom: 10px;
     }
 }
