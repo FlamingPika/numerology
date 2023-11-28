@@ -89,11 +89,12 @@ input.invalid {
     font-family: 'Quicksand', Poppins, sans-serif;
     font-weight: 500;
     display: none;
-    height: 10rem;
+    height: 6rem;
     width: 10rem;
     font-size: 6rem;
     text-align: center;
     color: #f8efe2;
+    margin-bottom: 4px;
 }
 
 .result.morethan10 {
@@ -163,7 +164,7 @@ input.invalid {
 
 .input-container {
     display: inline-block;
-    height: 10rem;
+    height: 6vw;
 }
 
 .num-input-container {
@@ -307,6 +308,10 @@ input.invalid {
     min-height: 5vw;
 }
 
+.numerology.desc p{
+    min-height: 1vw;
+}
+
 .numerology .result.float {
     width: 100%;
     text-align: center;
@@ -320,13 +325,23 @@ input.invalid {
     min-height: 5vw;
 }
 
-@media (max-width: 768px) {
+.numerology .result{
+    text-align: center;
+    width: 100%;
+}
 
+@media (max-width: 1800px) {
+    .input-container {
+        height: 7rem;
+    }
+}
+
+
+@media (max-width: 768px) {
     .numerology #day,
     .numerology #month,
     .numerology .mdesc,
     .numerology .ddesc {
-
         font-size: 7vw;
     }
 

@@ -6,23 +6,29 @@
     <title>Numerology</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Quicksand:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css?9842"> 
+    <link rel="stylesheet" href="styles.css?9842">
 </head>
 
 <body>
     <div class="canvas">
         <div class="container numerology">
             <div class="input-container">
+
+                <input id="day" class="num-input-container two input-font" type="text" inputmode="numeric" pattern="\d*"
+                    maxlength="2" invalid="false" onchange="validating(this)">
+                <img id="img1" class="image" src="src/plus.png" alt="plus">
+                <input id="month" class="num-input-container two input-font" type="text" inputmode="numeric"
+                    pattern="\d*" maxlength="2" invalid="false" onchange="validating(this)">
                 <div id="res" class="result" visible="false" ongoing="false">
                     10
                 </div>
-                <input id="day" class="num-input-container two input-font" type="text" inputmode="numeric" pattern="\d*" maxlength="2" invalid="false" onchange="validating(this)">
-                <img id="img1" class="image" src="src/plus.png" alt="plus">
-                <input id="month" class="num-input-container two input-font" type="text" inputmode="numeric" pattern="\d*" maxlength="2" invalid="false" onchange="validating(this)">
                 <img id="img2" class="image" src="src/plus.png" alt="plus">
-                <input id="year" class="num-input-container four input-font" type="text" inputmode="numeric" pattern="\d*" maxlength="4" invalid="false" onchange="validating(this)">
+                <input id="year" class="num-input-container four input-font" type="text" inputmode="numeric"
+                    pattern="\d*" maxlength="4" invalid="false" onchange="validating(this)">
             </div>
         </div>
         <div id="desc" class="desc numerology">
@@ -36,12 +42,12 @@
         </div>
         <div id="res2" class="info-text" visible="false" ongoing="false">
             Moon in Scorpio creates the need to delve into your feelings as deep as possible. You
-      desire meaningful emotional exchanges now more than at any other time even if it is not easy and you are
-      forced to change many things. Shallow relationships do not satisfy you, because they are not purifying
-      enough.
+            desire meaningful emotional exchanges now more than at any other time even if it is not easy and you are
+            forced to change many things. Shallow relationships do not satisfy you, because they are not purifying
+            enough.
         </div>
     </div>
-    
+
 </body>
 
 <script src="main.js?23423"> </script>
